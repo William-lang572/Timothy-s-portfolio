@@ -76,6 +76,38 @@ section {
   flex-direction: column;
 }
 
+.video-tv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  & .video {
+    display: flex;
+    flex-direction: column;
+
+    & iframe {
+      aspect-ratio: 16 / 9;
+      border: 0;
+    }
+  }
+}
+
+.video-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  & .video {
+    display: flex;
+    flex-direction: column;
+
+    & iframe {
+      aspect-ratio: 16 / 9;
+      border: 0;
+    }
+  }
+}
+
 .concerts, .radio {
   display: flex;
   gap: 2rem;
@@ -131,16 +163,20 @@ section {
 }
 
 /* --- Video --- */
-.video {
+.music {
+
+  & .video {
   aspect-ratio: 16 / 9;
   width: 100%;
 
-  & iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+    & iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
   }
 }
+
 
 /* --- Gallery --- */
 .gallery {
