@@ -108,10 +108,14 @@ section {
   }
 }
 
-.concerts, .radio {
+.concerts, .radio, .tvsl {
   display: flex;
   gap: 2rem;
   flex-direction: column;
+
+  & p {
+    text-align: left;
+  }
 }
 
 .about {
