@@ -29,7 +29,7 @@ body {
   & a {
     color: #e9dbc4;
     text-decoration: none;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
   }
 }
 
@@ -118,11 +118,10 @@ section {
 
 .hero {
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
 
   & h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
   }
 }
 
