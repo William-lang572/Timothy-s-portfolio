@@ -182,7 +182,8 @@ section {
   gap: 0.5rem;
 
   & img {
-    width: 100px;
+    width: 100%;
+    aspect-ratio: 3/4;
     object-fit: cover;
   }
 }
@@ -214,7 +215,12 @@ section {
 
   .tvsl {
   flex-direction: row;
+
+    & .gallery {
+      max-width: 50%;
+    }
   }
+  
   .concerts, .radio {
     flex-direction: row;
 
