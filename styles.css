@@ -29,7 +29,7 @@ body {
   & a {
     color: #e9dbc4;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.75rem;
   }
 }
 
