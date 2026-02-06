@@ -141,7 +141,7 @@ h2 {
   .contact-image {
     position: relative;
     background: url("/assets/images/SAVE_20260110_141319.jpg") center / cover no-repeat;
-    min-height: 70vh;
+    min-height: 60vh;
     padding: 2rem;
     display: flex;
     flex-direction: column;
