@@ -81,6 +81,21 @@ body {
   }
 }
 
+.hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("/assets/images/compressed-image.webp") center / contain no-repeat;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(23,23,23,1) 0%,
+    rgba(23,23,23,1) 60%,
+    rgba(23,23,23,0) 98%
+  );
+}
+
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -328,7 +343,7 @@ h2 {
   }
 
   .hero {
-
+    background: url("/assets/images/compressed-image.webp") right center / contain no-repeat;
     & h1 {
       font-size: 5rem;
     }
