@@ -102,7 +102,7 @@ footer {
 }
 
 section {
-  padding: 2rem 0.5rem;
+   padding: 3.5rem 0.5rem 0rem 0.5rem;
 
   & p {
     margin-top: 1rem;
