@@ -40,6 +40,7 @@ body {
 .nav-burger {
   position: fixed;
   top: 0;
+  right: 0;
   z-index: 10;
   background: rgba(0, 0, 0, 0.8);
   padding: 0.75rem 1rem;
@@ -62,7 +63,7 @@ body {
   & .menu {
     position: absolute;
     top: 44px;
-    left: -20px;
+    right: -20px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
