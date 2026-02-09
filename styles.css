@@ -1,4 +1,3 @@
-/* --- Reset (minimal, not preachy) --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +17,6 @@ body {
   margin: auto;
 }
 
-/* --- Navigation --- */
 .nav {
   display: flex;
   justify-content: space-around;
@@ -32,7 +30,6 @@ body {
   }
 }
 
-/* Top nav hidden on mobile */
 .nav-top {
   display: none;
 }
@@ -92,7 +89,6 @@ body {
     rgba(23,23,23,0) 100%
   );
 }
-
 
 footer {
   text-align: center;
@@ -178,8 +174,6 @@ h2 {
   font-size: 2rem;
 }
 
-
-
 .contact {
   display: grid;
   gap: 2rem;
@@ -239,8 +233,6 @@ h2 {
   }
 }
 
-
-/* --- Components --- */
 .button {
   display: inline-block;
   margin-top: 1rem;
@@ -307,8 +299,6 @@ h2 {
   }
 }
 
-
-/* --- Video --- */
 .music {
 
   & .video {
@@ -323,10 +313,6 @@ h2 {
   }
 }
 
-
-
-
-/* --- Desktop breakpoint --- */
 @media (min-width: 768px) {
 
   .nav-top {
