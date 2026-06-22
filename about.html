@@ -7,15 +7,7 @@
       <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body>
-      <nav class="nav nav-top">
-        <a href="index.html">Home</a>
-        <a href="about.html" hx-get="about.html" hx-target="#main-content" hx-push-url="true">About</a>
-        <a href="music.html" hx-get="music.html" hx-target="#main-content" hx-push-url="true">Music</a>
-        <a href="tvsl.html" hx-get="tvsl.html" hx-target="#main-content" hx-push-url="true">TV</a>
-        <a href="modeling.html" hx-get="modeling.html"" hx-push-url="true">Modeling</a>
-        <a href="contact.html" hx-get="contact.html" hx-target="#main-content" hx-push-url="true">Contact</a>
-      </nav>
+<body hx-include="partials/navbar.html">
 
       <main>
         <section class="about" id="about">
@@ -27,22 +19,6 @@
         </section>
       </main>
 
-      <nav class="nav nav-burger">
-        <details>
-          <summary aria-label="Open menu">☰</summary>
-          <div class="menu">
-            <a href="index.html">HOME</a>
-            <a href="about.html" hx-get="about.html" hx-target="#main-content" hx-push-url="true">ABOUT</a>
-            <a href="music.html" hx-get="music.html" hx-target="#main-content" hx-push-url="true">MUSIC</a>
-            <a href="tvsl.html" hx-get="tvsl.html" hx-target="#main-content" hx-push-url="true">TV</a>
-            <a href="modeling.html" hx-get="modeling.html" hx-target="#main-content" hx-push-url="true">MODELING</a>
-            <a href="contact.html" hx-get="contact.html" hx-target="#main-content" hx-push-url="true">CONTACT</a>
-          </div>
-        </details>
-      </nav>
-
-      <footer>
-        <p>&copy; Isaac Timothy. All rights reserved.</p>
-      </footer>
+      <!-- nav-burger and footer go after #main-content -->
   </body>
 </html>
