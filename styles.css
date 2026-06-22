@@ -15,6 +15,13 @@ body {
   line-height: 1.6;
   max-width: 1280px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .nav {
@@ -38,10 +45,8 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
   background: rgba(0, 0, 0, 0.8);
-  padding: 0.75rem 1rem;
-  font-size: 1.25rem;
+  padding: 1rem 1.25rem;
 
   & details {
     position: relative;
@@ -50,7 +55,7 @@ body {
   & summary {
     list-style: none;
     cursor: pointer;
-    
+
   }
 
   & summary::-webkit-details-marker {
@@ -59,9 +64,10 @@ body {
 
   & .menu {
     position: absolute;
-    top: 44px;
+    top: 41px;
     right: -20px;
     background: rgba(0, 0, 0, 0.8);
+    text-align: right;
     display: flex;
     flex-direction: column;
   }
@@ -80,13 +86,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url("/assets/images/compressed-image.webp") center / contain no-repeat;
+  background: url("./assets/images/compressed-image.webp") center / contain no-repeat;
   backdrop-filter: blur(0);
   mask-image: linear-gradient(
     to bottom,
-    rgba(23,23,23,1) 0%,
-    rgba(23,23,23,1) 60%,
-    rgba(23,23,23,0) 100%
+    #171717 0%,
+    #171717 60%,
+    #17171700 100%
   );
 }
 
@@ -185,7 +191,7 @@ h2 {
 
   .contact-image {
     position: relative;
-    background: url("/assets/images/SAVE_20260110_141319.jpg") center / cover no-repeat;
+    background: url("./assets/images/SAVE_20260110_141319.jpg") center / cover no-repeat;
     min-height: 60vh;
     padding: 2rem;
     display: flex;
@@ -199,9 +205,9 @@ h2 {
   }
 
   .contact-info {
-    
+
     & .socials {
-      
+
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
@@ -211,11 +217,11 @@ h2 {
         border-bottom: 2px solid #e9dbc4;
         list-style: none;
         gap: 0.35rem;
-        
+
 
         & a {
           display: flex;
-          justify-content: space-between; 
+          justify-content: space-between;
           color: #e9dbc4;
           text-decoration: none;
           word-break: break-all;
@@ -228,7 +234,7 @@ h2 {
             align-self: center;
           }
         }
-      }    
+      }
     }
   }
 }
@@ -327,7 +333,7 @@ h2 {
   }
 
   .hero {
-    background: url("/assets/images/compressed-image.webp") right center / contain no-repeat;
+    background: url("./assets/images/compressed-image.webp") right center / contain no-repeat;
     & h1 {
       font-size: 5rem;
     }
@@ -344,7 +350,7 @@ h2 {
       max-width: 50%;
     }
   }
-  
+
   .concerts, .radio {
     flex-direction: row;
 

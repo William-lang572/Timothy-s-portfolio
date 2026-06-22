@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Isaac Timothy - Concerts</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
+  </head>
+
+  <body hx-suppress>
+      <nav class="nav nav-top">
+        <a href="index.html" hx-get="index.html" hx-target="#main-content" hx-push-url="true">Home</a>
+        <a href="about.html" hx-get="about.html" hx-target="#main-content" hx-push-url="true">About</a>
+        <a href="music.html" hx-get="music.html" hx-target="#main-content" hx-push-url="true">Music</a>
+        <a href="tvsl.html" hx-get="tvsl.html" hx-target="#main-content" hx-push-url="true">TV</a>
+        <a href="modeling.html" hx-get="modeling.html" hx-target="#main-content" hx-push-url="true">Modeling</a>
+        <a href="contact.html" hx-get="contact.html" hx-target="#main-content" hx-push-url="true">Contact</a>
+      </nav>
+
+      <main id="main-content">
+        <section class="concerts">
+          <div>
+            <h2 style="margin-bottom: 1rem;">Concerts</h2>
+            <p>Isaac has showcased his dynamic stage presence
+              at notable live events.
+            </p>
+            <p>
+              He performed at the Naadhagama Concert,
+              captivating audiences with his powerful vocals, and
+              later shared the stage in a concert with Wasthi,
+              further establishing his reputation as a rising live
+              performer in Sri Lanka’s music scene.
+            </p>
+          </div>
+          <img src="./assets/images/The Festival Park.webp" alt="">
+          <img src="./assets/images/WASTHI.webp" alt="">
+        </section>
+      </main>
+
+      <nav class="nav nav-burger">
+        <details>
+          <summary aria-label="Open menu">☰</summary>
+
+          <div class="menu">
+            <a href="index.html" hx-get="index.html" hx-target="#main-content" hx-push-url="true">HOME</a>
+            <a href="about.html" hx-get="about.html" hx-target="#main-content" hx-push-url="true">ABOUT</a>
+            <a href="music.html" hx-get="music.html" hx-target="#main-content" hx-push-url="true">MUSIC</a>
+            <a href="tvsl.html" hx-get="tvsl.html" hx-target="#main-content" hx-push-url="true">TV</a>
+            <a href="modeling.html" hx-get="modeling.html" hx-target="#main-content" hx-push-url="true">MODELING</a>
+            <a href="contact.html" hx-get="contact.html" hx-target="#main-content" hx-push-url="true">CONTACT</a>
+          </div>
+        </details>
+      </nav>
+
+      <footer style="margin-top: auto;">
+        <p>&copy; Isaac Timothy. All rights reserved.</p>
+      </footer>
+  </body>
+</html>

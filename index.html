@@ -3,308 +3,82 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Isaac Timothy</title>
+      <title>Isaac Timothy - Home</title>
       <link rel="stylesheet" href="styles.css" />
+      <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
   </head>
 
-  <body>
+  <body hx-suppress>
       <nav class="nav nav-top">
-        <a href="#about">About</a>
-        <a href="#music">Music</a>
-        <a href="#tvsl">Appearances</a>
-        <a href="#modeling">Modeling</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" hx-get="index.html" hx-target="#main-content" hx-push-url="true">Home</a>
+        <a href="about.html" hx-get="about.html" hx-target="#main-content" hx-push-url="true">About</a>
+        <a href="music.html" hx-get="music.html" hx-target="#main-content" hx-push-url="true">Music</a>
+        <a href="tvsl.html" hx-get="tvsl.html" hx-target="#main-content" hx-push-url="true">TV</a>
+        <a href="modeling.html" hx-get="modeling.html" hx-target="#main-content" hx-push-url="true">Modeling</a>
+        <a href="contact.html" hx-get="contact.html" hx-target="#main-content" hx-push-url="true">Contact</a>
       </nav>
 
-      <main>
+      <main id="main-content">
+
+        <section class="hero">
+          <p>MEET SRI LANKA’S RISING ROCK ARTISIT</p>
+          <h1 style="font-size: clamp(3rem, 8vw, 5rem);">ISAAC TIMOTHY</h1>
+          <p>Singer | Performer | Songwriter | Composer</p>
+        </section>
 
         <section class="about" id="about">
-
-          <section class="hero">
-            <p>MEET SRI LANKA’S RISING ROCK ARTISIT</p>
-            <h1>ISAAC TIMOTHY</h1>
-            <p>Singer | Performer | Songwriter | Composer</p>
-          </section>
-          
-          <h2>ABOUT</h2>
+          <h2 style="margin-bottom: 1rem;">WELCOME</h2>
           <p>
             I am a singer-songwriter redefining what it means to be a modern Sri Lankan artist.
             With my powerhouse vocals, commanding stage presence, and fearless fusion of rock, pop, and Sri Lankan sounds, I’ve proven that I’m more than just a competition success story—I’m a rising artist carving out my own lane in the industry.
           </p>
-          <p>
-            After capturing hearts on <strong>The Voice Sri Lanka Season 3 (2025)</strong> under the guidance of my coach, <strong>Raini Charuka</strong>, my journey has been unstoppable.
-            Reaching the finals of the show allowed me to connect deeply with audiences through passionate performances and emotional storytelling.
-            My goal has always been to balance raw power with genuine vulnerability, creating music that can both move and electrify a crowd.
-          </p>
-          <p>
-            Now, I’m stepping into a new chapter of my career.
-            My debut Sinhala single, <strong>“Akaalaye”</strong>, is a collaboration with Mentertainment, produced by Dilru Costa (Cozzy) and written by Yashodha Adhikari.
-            The song blends my signature rock-pop edge with the richness of Sri Lankan music, marking a bold new direction for me.
-            I’m also preparing to release more Sinhala and English music this year.
-          </p>
-          <p>
-            Off stage, I’m grounded and introspective—a thoughtful creator who values real connection as much as performance.
-            On stage, I become a force of nature, driven by intensity, charisma, and the desire to make every song feel like a personal story.
-          </p>
+          <a href="about.html" class="button">Read My Full Story</a>
         </section>
-
 
         <section id="music" class="music">
-          <h2>DEBUT SINGLE – "AKAALAYE"</h2>
-          <p>
-            Isaac released his debut single <strong>“Akaalaye”</strong> with M
-            Entertainment on October 18, 2025, across all major digital
-            platforms. He worked with producer <strong>Dilru Costa (cozzy.mp3)</strong>,
-            lyricist <strong>Yashoda</strong> for the track, and director <strong>Sahan Wickramaarachchi</strong> for the music video.
-          </p>
-          <p>
-            The single received overwhelmingly positive feedback, with
-            fans praising Isaac’s vocals and fresh sound. The fans are
-            excited for the next releases and his debut album, which
-            promises to mark a new era in the Sri Lankan music industry.
-          </p>
-          <div class="video">
-            <iframe
-              loading="lazy"
-              src="https://www.youtube.com/embed/MlELtt-7UNc"
-              title="Isaac Timothy – Akaalaye"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <details class="listen-menu">
-            <summary class="button">Stream Here</summary>
-            <div class="listen-list">
-              <a href="https://open.spotify.com/album/3Wz6p7cQdFck6ID5VZJcHZ" target="_blank">Spotify</a>
-              <a href="https://www.deezer.com/us/album/831969221" target="_blank">Deezer</a>
-              <a href="https://music.apple.com/us/album/akaalaye-single/1843887424" target="_blank">Apple Music</a>
-              <a href="https://music.youtube.com/watch?v=cNU_81ld8Rc" target="_blank">YouTube</a>
-              <a href="https://soundcloud.com/isaactimothy/akaalaye" target="_blank">SoundCloud</a>
-              <a href="https://tidal.com/album/464686077" target="_blank">Tidal</a>
-              <a href="https://music.amazon.com/albums/B0FTT4D9JB" target="_blank">Amazon Music</a>
-            </div>
-          </details>
-        </section>
-
-
-        <section class="concerts">
-          <div>
-            <h2>Concerts</h2>
-            <p>Isaac has showcased his dynamic stage presence
-              at notable live events.
-            </p>
-            <p>
-              He performed at the Naadhagama Concert,
-              captivating audiences with his powerful vocals, and
-              later shared the stage in a concert with Wasthi,
-              further establishing his reputation as a rising live
-              performer in Sri Lanka’s music scene.
-            </p>
-          </div>
-          <img src="./assets/images/The Festival Park.webp" alt="">
-          <img src="./assets/images/WASTHI.webp" alt="">
-        </section>
-
-
-        <section class="radio">
-          <div>
-            <h2>Radio Feature</h2>
-            <p>Isaac was featured on the Radio Channel FOX 91.4
-              FM’s Artist Spotlight segment and Sirasa’s 106.5
-              Y FM on several occasions, where his journey and
-              music were highlighted to the national audience.
-            </p>
-          </div>
-          <img src="./assets/images/Artist Spotlight.webp" alt="">
-        </section>
-        
-
-        <section class="tvsl" id="tvsl">
-          <div>
-            <h2>The Voice Sri Lanka Season 3</h2>
-            <p>Isaac’s rise to fame as the <strong>New Rock Artist</strong> began with his
-              powerful comeback on <strong>The Voice Sri Lanka Season 3 2025</strong>, joining <strong>Team Raini Charuka</strong>, who used her ‘Block’
-              on <strong>Mihindu Ariyaratne</strong>. Isaac became a fan-favorite as he
-              earned the ‘Most Votes Online’ for both his LIVE
-              performances making him <strong>Team Raini’s Finalist</strong>.
-            </p>
-          </div>
-          <div class="gallery">
-            <img src="./assets/images/SAVE_20260110_141153.jpg" alt="">
-            <img src="./assets/images/SAVE_20260110_141310.jpg" alt="">
-            <img src="./assets/images/DSC00422.webp" alt="">
-            <img src="./assets/images/SAVE_20260110_141324.jpg" alt="">
-            <img src="./assets/images/DSC00490.webp" alt="">
-            <img src="./assets/images/SAVE_20260110_141149.jpg" alt="">
-            <img src="./assets/images/SAVE_20260110_141158.jpg" alt="">
-            <img src="./assets/images/SAVE_20260110_141215.jpg" alt="">
-          </div>
-        </section>
-
-
-        <section>
-          <h2>Highlights</h2>
-          <p>Isaac’s performances on <strong>The Voice Sri Lanka</strong> was recognized internationally, and many
-            YouTubers started a trend reacting to all Isaac’s Performances. All his viral performaces was
-            featured on <strong>The Voice Global Youtube Channel</strong> for both ‘Best of the Week’ & ‘Best of the
-            Month’.
-          </p>
-          <div class="video-highlights">
-            <div class="video">
-              <iframe
-                loading="lazy"
-                src="https://www.youtube.com/embed/KHES7V8NitE?start=760"
-                title="Numb – Linkin Park"
-                allowfullscreen>
-              </iframe>
-              <p>Numb – Linkin Park</p>
-            </div>
-            <div class="video">
-              <iframe
-                loading="lazy"
-                src="https://www.youtube.com/embed/lJmENTzfmZc?start=645"
-                title="Believer – Imagine Dragons"
-                allowfullscreen>
-              </iframe>
-              <p>Radioactive – Imagine Dragons</p>
-            </div>
-            <div class="video">
-              <iframe
-                loading="lazy"
-                src="https://www.youtube.com/embed/0uJ6y27soEI?start=122"
-                title="Believer – Imagine Dragons"
-                allowfullscreen>
-              </iframe>
-              <p>Can You Feel My Heart - Bring Me The Horizon</p>
-            </div>
-          </div>
-        </section>
-
-
-        <section>
-          <h2>TV Appearances</h2>
-          <div class="video-tv">
-            <div class="video">
-              <iframe
-                loading="lazy"
-                src="https://www.youtube.com/embed/qRCv1yDXT-0?start=1326"
-                title="Imorich Tunes"
-                allowfullscreen>
-              </iframe>
-              <p>Isaac also shared the stage with Sri Lanka’s Legendary Rock Artists Indrachapa Liyanage and Mihindu
-                Ariyaratne on Imorich Tunes musical show. This marked a milestone moment as Isaac was recognized as the
-                next - generation Sri Lankan rock performer.
+          <h2 style="margin-bottom: 1rem;">LATEST RELEASE</h2>
+          <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+              <p>
+                Isaac released his debut single <strong>“Akaalaye”</strong> with M
+                Entertainment on October 18, 2025. The song blends my signature rock-pop edge with the richness of Sri Lankan music.
               </p>
+              <a href="music.html" class="button">Listen & Watch</a>
             </div>
-            <div class="video">
+            <div class="video" style="flex: 1; min-width: 300px;">
               <iframe
                 loading="lazy"
-                src="https://www.youtube.com/embed/AzCSnFgBfSo?start=200"
-                title="Tharu Iridha (තරැ ඉරිදා)"
+                src="https://www.youtube.com/embed/MlELtt-7UNc"
+                title="Isaac Timothy – Akaalaye"
                 allowfullscreen>
               </iframe>
-              <p>Isaac performed and was featured on
-                Tharu Iridha (තරැ ඉරිදා) talk show
-                with Supun Perera and The Voice
-                Finalists, highlighting his growing
-                recognition in the industry.
-              </p>
-            </div>
-            <div class="video">
-              <iframe
-                loading="lazy"
-                src="https://www.youtube.com/embed/d_O4SX2FODY?start=13"
-                title="Jeevithayata Idadenna"
-                allowfullscreen>
-              </iframe>
-              <p>Isaac was invited with Raini Charuka
-                to a talk show, Jeevithayata Idadenna
-                (ජීවිතයට ඉඩෙදන්න) that featured
-                inspiring life stories of young Sri Lankan
-                talents.
-              </p>
-            </div>
-            <div class="video">
-              <iframe
-                loading="lazy"
-                src="https://www.youtube.com/embed/R-bNq_xnZAc?start=57"
-                title="Catchpoint"
-                allowfullscreen>
-              </iframe>
-              <p>Isaac made a guest appearance,
-                alongside other music artists, Yohani,
-                Tehan, and Dasun, on the popular
-                game show Catchpoint.
-              </p>
             </div>
           </div>
         </section>
 
-        <section class="modeling" id="modeling">
-          <h2>Modeling</h2>
-          <p>Collaboration with the <strong>CVRR Project</strong>, <strong>The Licenced</strong>, and <strong>Raini Charuka</strong>
-            and <strong>Jukebox</strong>, in promotional shoots and creative campaigns.
-          </p>
-          <h2>WIP</h2>
-          <!-- <img src="./assets/images/SAVE_20260110_141110.jpg" alt="">
-          <img src="./assets/images/SAVE_20260110_141337.jpg" alt=""> -->
-        </section>
-
-        <section class="contact" id="contact">
-
-          <div class="contact-image">
-            <h2>STAY<br>CONNECTED</h2>
-          </div>
-
-          <div class="contact-info">
-            <ul class="socials">
-              <li>
-                <a href="https://www.instagram.com/isaactimothy.lk/" target="_blank">
-                  <strong>INSTAGRAM</strong>
-                  <span>@isaactimothy.lk | 9.9K followers</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.facebook.com/isaactimothy.lk/" target="_blank">
-                  <strong>FACEBOOK</strong>
-                  <span>@isaactimothy.lk | 23K followers</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.youtube.com/@isaactimothy_lk" target="_blank">
-                  <strong>YOUTUBE</strong>
-                  <span>@isaactimothy_lk | 7.9K followers</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.tiktok.com/@isaactimothy.lk" target="_blank">
-                  <strong>TIKTOK</strong>
-                  <span>@isaactimothy.lk | 14K followers</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://open.spotify.com/artist/7pE23FSbgpV4hGmTIW6KuE" target="_blank">
-                <strong>SPOTIFY</strong>
-                <span>Isaac Timothy | 1K followers</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="mailto:timosilva@gmail.com">
-                  <strong>EMAIL</strong>
-                  <span>timosilva@gmail.com</span>
-                </a>
-              </li>
-            </ul>
-
-            <p>
-              After competing on <em>The Voice Sri Lanka Season 3 2025</em> under the guidance
-              of Coach <strong>Raini Charuka</strong>, Isaac became <strong>Team Raini’s Finalist</strong>,
-              leading to his recognition as the <strong>New Rock Artist in Sri Lanka</strong>.
-            </p>
+        <section style="text-align: center; padding: 4rem 0;">
+          <h2>EXPLORE MORE</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
+            <div>
+              <h3>About Me</h3>
+              <p>My journey and philosophy.</p>
+              <a href="about.html" class="button">View Page</a>
+            </div>
+            <div>
+              <h3>Music Gallery</h3>
+              <p>Full discography & streams.</p>
+              <a href="music.html" class="button">View Page</a>
+            </div>
+            <div>
+              <h3>Media & TV</h3>
+              <p>Appearances and highlights.</p>
+              <a href="tvsl.html" class="button">View Page</a>
+            </div>
+            <div>
+              <h3>Modeling</h3>
+              <p>Creative campaigns.</p>
+              <a href="modeling.html" class="button">View Page</a>
+            </div>
           </div>
         </section>
       </main>
@@ -312,13 +86,13 @@
       <nav class="nav nav-burger">
         <details>
           <summary aria-label="Open menu">☰</summary>
-
           <div class="menu">
-            <a href="#about">About</a>
-            <a href="#music">Music</a>
-            <a href="#tvsl">TV</a>
-            <a href="#modeling">Modeling</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" hx-get="index.html" hx-target="#main-content" hx-push-url="true">HOME</a>
+            <a href="about.html" hx-get="about.html" hx-target="#main-content" hx-push-url="true">ABOUT</a>
+            <a href="music.html" hx-get="music.html" hx-target="#main-content" hx-push-url="true">MUSIC</a>
+            <a href="tvsl.html" hx-get="tvsl.html" hx-target="#main-content" hx-push-url="true">TV</a>
+            <a href="modeling.html" hx-get="modeling.html" hx-target="#main-content" hx-push-url="true">MODELING</a>
+            <a href="contact.html" hx-get="contact.html" hx-target="#main-content" hx-push-url="true">CONTACT</a>
           </div>
         </details>
       </nav>
