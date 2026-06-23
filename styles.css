@@ -277,48 +277,79 @@ h2 {
   }
 }
 
-.listen-menu {
-  position: relative;
-  display: inline-block;
+.stream-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
 
-  & summary {
-    list-style: none;
-    cursor: pointer;
-  }
+.stream-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  min-width: 120px;
+  justify-content: center;
+}
 
-  & summary::-webkit-details-marker {
-    display: none;
-  }
+.stream-btn.spotify {
+  background: #1db954;
+  color: white;
+}
 
-  & .listen-list {
-    position: absolute;
-    top: calc(100% + 0.5rem);
-    left: 0;
+.stream-btn.deezer {
+  background: #ff0090;
+  color: white;
+}
 
-    display: flex;
+.stream-btn.apple {
+  background: #a6b1e1;
+  color: #1d1d1f;
+}
+
+.stream-btn.youtube {
+  background: #ff0000;
+  color: white;
+}
+
+.stream-btn.soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.stream-btn.tidal {
+  background: #00aaff;
+  color: white;
+}
+
+.stream-btn.amazon {
+  background: #ff9900;
+  color: #000;
+}
+
+.stream-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.stream-icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .stream-links {
     flex-direction: column;
-    gap: 0.5rem;
-
-    background: #000;
-    border: 1px solid #333;
-    padding: 0.75rem;
-    min-width: 130px;
-    z-index: 10;
+    align-items: stretch;
   }
 
-  & a {
-    color: white;
-    text-decoration: none;
-    padding: 0.4rem 0;
-    border-bottom: 1px solid #222;
-
-    &:last-child {
-      border-bottom: none;
-    }
-
-    &:hover {
-      opacity: 0.8;
-    }
+  .stream-btn {
+    width: 100%;
   }
 }
 
