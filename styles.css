@@ -312,8 +312,29 @@ h2 {
   object-fit: contain;
 }
 
+.stream-btn {
+  gap: 0.5rem;
+}
+
 .stream-btn:hover .stream-icon {
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .stream-btn {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem;
+  }
+
+  .stream-btn span {
+    display: none;
+  }
+
+  .stream-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
