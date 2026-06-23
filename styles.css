@@ -321,10 +321,17 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .stream-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: unset;
+  }
+
   .stream-btn {
     flex-direction: column;
     gap: 0.25rem;
     padding: 0.5rem;
+    width: 100%;
   }
 
   .stream-btn span {
