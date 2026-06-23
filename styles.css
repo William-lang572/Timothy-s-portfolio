@@ -312,6 +312,13 @@ h2 {
   object-fit: contain;
 }
 
+.stream-btn.tidal .stream-icon path,
+.stream-btn.amazon .stream-icon path,
+.stream-btn.tidal .stream-icon circle,
+.stream-btn.amazon .stream-icon circle {
+  fill: #fff !important;
+}
+
 .stream-btn.tidal .stream-icon,
 .stream-btn.amazon .stream-icon {
   filter: invert(1);
