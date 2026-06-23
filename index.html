@@ -17,10 +17,14 @@
         <a href="contact.html">Contact</a>
       </nav>
       
-      <nav class="nav nav-burger">
-        <details>
-          <summary aria-label="Open menu">☰</summary>
-          <div class="menu">
+      <nav class="nav-burger">
+        <button class="burger-btn" aria-label="Toggle menu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <div class="overlay">
+          <div class="overlay-content">
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT</a>
             <a href="music.html">MUSIC</a>
@@ -28,7 +32,7 @@
             <a href="modeling.html">MODELING</a>
             <a href="contact.html">CONTACT</a>
           </div>
-        </details>
+        </div>
       </nav>
 
       <main id="main-content">
@@ -99,5 +103,33 @@
       <footer>
         <p>&copy; Isaac Timothy. All rights reserved.</p>
       </footer>
+
+      <script>
+        const burgerBtn = document.querySelector('.burger-btn');
+        const overlay = document.querySelector('.overlay');
+        const overlayLinks = document.querySelectorAll('.overlay-content a');
+
+        burgerBtn.addEventListener('click', () => {
+          burgerBtn.classList.toggle('active');
+          overlay.classList.toggle('active');
+          document.body.style.overflow = overlay.classList.contains('active') ? 'hidden' : '';
+        });
+
+        overlayLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            burgerBtn.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+          });
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            burgerBtn.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      </script>
   </body>
 </html>

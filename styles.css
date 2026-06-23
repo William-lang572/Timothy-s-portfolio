@@ -45,41 +45,87 @@ main {
   position: fixed;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 1rem 1.25rem;
   z-index: 1000;
+}
 
-  & details {
-    position: relative;
-  }
+.burger-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #333;
+  padding: 0.75rem;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
 
-  & summary {
-    list-style: none;
-    cursor: pointer;
+.burger-line {
+  width: 22px;
+  height: 2px;
+  background: #e9dbc4;
+  transition: all 0.3s ease;
+  display: block;
+}
 
-  }
+.burger-btn.active .burger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
 
-  & summary::-webkit-details-marker {
-    display: none;
-  }
+.burger-btn.active .burger-line:nth-child(2) {
+  opacity: 0;
+}
 
-  & .menu {
-    position: absolute;
-    top: 41px;
-    right: -20px;
-    background: rgba(0, 0, 0, 0.8);
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-  }
+.burger-btn.active .burger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
-  & .menu a {
-    border-bottom: 1px solid #222;
-  }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 23, 23, 0.98);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
 
-  & .menu a:last-child {
-    border-bottom: none;
-  }
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.overlay-content a {
+  color: #e9dbc4;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.overlay-content a:hover {
+  color: #fff;
+  transform: scale(1.05);
 }
 
 .hero {
