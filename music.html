@@ -5,23 +5,44 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Isaac Timothy - Music</title>
       <link rel="stylesheet" href="styles.css" />
-      <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
   </head>
 
   <body>
-    <main>
+      <nav class="nav nav-top">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="music.html">Music</a>
+        <a href="tvsl.html">TV</a>
+        <a href="modeling.html">Modeling</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      
+      <nav class="nav nav-burger">
+        <details>
+          <summary aria-label="Open menu">☰</summary>
+          <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="music.html">MUSIC</a>
+            <a href="tvsl.html">TV</a>
+            <a href="modeling.html">MODELING</a>
+            <a href="contact.html">CONTACT</a>
+          </div>
+        </details>
+      </nav>
 
+      <main id="main-content">
         <section id="music" class="music">
           <h2 style="margin-bottom: 1rem;">DEBUT SINGLE – "AKAALAYE"</h2>
           <p>
-            Isaac released his debut single <strong style="color: #e9dbc4;">“Akaalaye”</strong> with M
+            Isaac released his debut single <strong style="color: #e9dbc4;">"Akaalaye"</strong> with M
             Entertainment on October 18, 2025, across all major digital
             platforms. He worked with producer <strong style="color: #e9dbc4;">Dilru Costa (cozzy.mp3)</strong>,
             lyricist <strong style="color: #e9dbc4;">Yashoda</strong> for the track, and director <strong style="color: #e9dbc4;">Sahan Wickramaarachchi</strong> for the music video.
           </p>
           <p>
             The single received overwhelmingly positive feedback, with
-            fans praising Isaac’s vocals and fresh sound. The fans are
+            fans praising Isaac's vocals and fresh sound. The fans are
             excited for the next releases and his debut album, which
             promises to mark a new era in the Sri Lankan music industry.
           </p>
@@ -46,8 +67,13 @@
             </div>
           </details>
         </section>
-      </main>
 
-      <!-- nav-burger and footer go after #main-content -->
-  </body>
+        <section class="concerts">
+          <h2 style="margin-bottom: 1rem;">Concerts</h2>
+          <p>Isaac has showcased his dynamic stage presence at notable live events.</p>
+          <p>He performed at the Naadhagama Concert, captivating audiences with his powerful vocals, and later shared the stage in a concert with Wasthi, further establishing his reputation as a rising live performer in Sri Lanka's music scene.</p>
+          <img src="./assets/images/The Festival Park.webp" alt="">
+          <img src="./assets/images/WASTHI.webp" alt="">
+        </section>
+      </main>
 </html>

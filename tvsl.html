@@ -5,11 +5,33 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Isaac Timothy - TV</title>
       <link rel="stylesheet" href="styles.css" />
-      <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
   </head>
 
   <body>
-    <main>
+      <nav class="nav nav-top">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="music.html">Music</a>
+        <a href="tvsl.html">TV</a>
+        <a href="modeling.html">Modeling</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      
+      <nav class="nav nav-burger">
+        <details>
+          <summary aria-label="Open menu">☰</summary>
+          <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="music.html">MUSIC</a>
+            <a href="tvsl.html">TV</a>
+            <a href="modeling.html">MODELING</a>
+            <a href="contact.html">CONTACT</a>
+          </div>
+        </details>
+      </nav>
+
+      <main id="main-content">
 
         <section class="tvsl" id="tvsl">
           <div>
@@ -32,8 +54,30 @@
             <img src="./assets/images/SAVE_20260110_141215.jpg" alt="">
           </div>
         </section>
-      </main>
 
-      <!-- nav-burger and footer go after #main-content -->
-  </body>
+        <section class="highlights">
+          <h2 style="margin-bottom: 1rem;">Highlights</h2>
+          <p>Isaac's performances on <strong style="color: #e9dbc4;">The Voice Sri Lanka</strong> were recognized internationally, and many YouTubers started a trend reacting to all Isaac's Performances. All his viral performances were featured on <strong style="color: #e9dbc4;">The Voice Global Youtube Channel</strong> for both 'Best of the Week' & 'Best of the Month'.</p>
+          <div class="video-highlights">
+            <div class="video">
+              <iframe loading="lazy" src="https://www.youtube.com/embed/KHES7V8NitE?start=760" title="Numb – Linkin Park" allowfullscreen></iframe>
+              <p>Numb – Linkin Park</p>
+            </div>
+            <div class="video">
+              <iframe loading="lazy" src="https://www.youtube.com/embed/lJmENTzfmZc?start=645" title="Radioactive – Imagine Dragons" allowfullscreen></iframe>
+              <p>Radioactive – Imagine Dragons</p>
+            </div>
+            <div class="video">
+              <iframe loading="lazy" src="https://www.youtube.com/embed/0uJ6y27soEI?start=122" title="Can You Feel My Heart - Bring Me The Horizon" allowfullscreen></iframe>
+              <p>Can You Feel My Heart - Bring Me The Horizon</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="radio">
+          <h2 style="margin-bottom: 1rem;">Radio Feature</h2>
+          <p>Isaac was featured on the Radio Channel FOX 91.4 FM's Artist Spotlight segment and Sirasa's 106.5 Y FM on several occasions, where his journey and music were highlighted to the national audience.</p>
+          <img src="./assets/images/Artist Spotlight.webp" alt="">
+        </section>
+      </main>
 </html>
