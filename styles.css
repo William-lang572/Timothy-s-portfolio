@@ -47,6 +47,7 @@ main {
   right: 0;
   background: rgba(0, 0, 0, 0.8);
   padding: 1rem 1.25rem;
+  z-index: 1000;
 
   & details {
     position: relative;
