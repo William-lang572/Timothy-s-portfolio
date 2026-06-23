@@ -312,6 +312,11 @@ h2 {
   object-fit: contain;
 }
 
+.stream-btn.tidal .stream-icon,
+.stream-btn.amazon .stream-icon {
+  filter: invert(1);
+}
+
 .stream-btn {
   gap: 0.5rem;
 }
