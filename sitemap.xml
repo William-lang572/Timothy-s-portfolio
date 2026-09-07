@@ -4,61 +4,54 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://isaactimothy.lk/</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+
     <image:image>
       <image:loc>https://isaactimothy.lk/assets/images/Greenfiestaevenpic_005.avif</image:loc>
-      <image:caption>Isaac Timothy performing at NSBM Green Fiesta 2026</image:caption>
-      <image:title>Isaac Timothy — Sri Lanka's Rising Rock Artist</image:title>
     </image:image>
+
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/Fc-5HR2P4rM/hqdefault.jpg</video:thumbnail_loc>
       <video:title>Khadhambariye – Isaac Timothy</video:title>
-      <video:description>Isaac Timothy - Khadhambariye</video:description>
-      <video:content_loc>https://www.youtube.com/embed/Fc-5HR2P4rM</video:content_loc>
+      <video:description>Isaac Timothy performs "Khadhambariye."</video:description>
       <video:player_loc>https://www.youtube.com/embed/Fc-5HR2P4rM</video:player_loc>
     </video:video>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/HshmNafroYI/hqdefault.jpg</video:thumbnail_loc>
       <video:title>Arctic Eyes – Isaac Timothy</video:title>
-      <video:description>Isaac Timothy - Arctic Eyes</video:description>
-      <video:content_loc>https://www.youtube.com/embed/HshmNafroYI</video:content_loc>
+      <video:description>Isaac Timothy performs "Arctic Eyes."</video:description>
       <video:player_loc>https://www.youtube.com/embed/HshmNafroYI</video:player_loc>
     </video:video>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/MlELtt-7UNc/hqdefault.jpg</video:thumbnail_loc>
       <video:title>Isaac Timothy – Akaalaye</video:title>
-      <video:description>Isaac Timothy - Akaalaye</video:description>
-      <video:content_loc>https://www.youtube.com/embed/MlELtt-7UNc</video:content_loc>
+      <video:description>Isaac Timothy performs "Akaalaye."</video:description>
       <video:player_loc>https://www.youtube.com/embed/MlELtt-7UNc</video:player_loc>
     </video:video>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/1P2cQqoRTDg/hqdefault.jpg</video:thumbnail_loc>
-      <video:title>Linkin Park’s Numb at NSBM Green Fiesta 2026</video:title>
-      <video:description>Linkin Park’s Numb at NSBM Green Fiesta 2026</video:description>
-      <video:content_loc>https://www.youtube.com/embed/1P2cQqoRTDg</video:content_loc>
+      <video:title>Linkin Park's Numb at NSBM Green Fiesta 2026</video:title>
+      <video:description>Isaac Timothy performs a cover of Linkin Park's "Numb" at NSBM Green Fiesta 2026.</video:description>
       <video:player_loc>https://www.youtube.com/embed/1P2cQqoRTDg</video:player_loc>
     </video:video>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/p1qOVspA-8Y/hqdefault.jpg</video:thumbnail_loc>
       <video:title>Akaalaye (අකාලයේ) at NSBM Green Fiesta 2026</video:title>
-      <video:description>Akaalaye at NSBM Green Fiesta 2026</video:description>
-      <video:content_loc>https://www.youtube.com/embed/p1qOVspA-8Y</video:content_loc>
+      <video:description>Isaac Timothy performs "Akaalaye" live at NSBM Green Fiesta 2026.</video:description>
       <video:player_loc>https://www.youtube.com/embed/p1qOVspA-8Y</video:player_loc>
     </video:video>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/_TyjXzWGDag/hqdefault.jpg</video:thumbnail_loc>
       <video:title>Roo Sara x Radioactive at NSBM Green Fiesta 2026</video:title>
-      <video:description>Roo Sara x Radioactive at NSBM Green Fiesta 2026</video:description>
-      <video:content_loc>https://www.youtube.com/embed/_TyjXzWGDag</video:content_loc>
+      <video:description>Isaac Timothy performs "Roo Sara x Radioactive" live at NSBM Green Fiesta 2026.</video:description>
       <video:player_loc>https://www.youtube.com/embed/_TyjXzWGDag</video:player_loc>
     </video:video>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/qxYF9LP64kg/hqdefault.jpg</video:thumbnail_loc>
       <video:title>Believer at NSBM Green Fiesta 2026</video:title>
-      <video:description>Believer at NSBM Green Fiesta 2026</video:description>
-      <video:content_loc>https://www.youtube.com/embed/qxYF9LP64kg</video:content_loc>
+      <video:description>Isaac Timothy performs a cover of "Believer" live at NSBM Green Fiesta 2026.</video:description>
       <video:player_loc>https://www.youtube.com/embed/qxYF9LP64kg</video:player_loc>
     </video:video>
   </url>

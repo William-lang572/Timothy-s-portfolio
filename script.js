@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
       links: [
         { href: 'https://open.spotify.com/track/6vWTmxhYT8RoSn99kNX6dJ', icon: 'assets/icons/spotify.svg', alt: 'Spotify' },
         { href: 'https://music.apple.com/us/song/khadhambariye/6794283060', icon: 'assets/icons/apple-music.svg', alt: 'Apple Music' },
-        { href: 'https://music.youtube.com/watch?v=bHWFK5yP_ak', icon: 'assets/icons/youtube-music.svg', alt: 'YouTube Music' },
+        { href: 'https://music.youtube.com/watch?v=Fc-5HR2P4rM', icon: 'assets/icons/youtube-music.svg', alt: 'YouTube Music' },
         { href: 'https://music.amazon.com/albums/B0HBBR9KPN', icon: 'assets/icons/amazon-music.svg', alt: 'Amazon Music' },
         { href: 'https://soundcloud.com/isaactimothy/khadhambariye', icon: 'assets/icons/soundcloud.svg', alt: 'SoundCloud' },
         { href: 'https://link.deezer.com/s/34dNggTwC0ef2gUTkYLqa', icon: 'assets/icons/deezer.svg', alt: 'Deezer' },
