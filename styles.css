@@ -111,14 +111,14 @@ main {
 .hero {
   min-height: 90vh;
   margin-top: 3rem;
-  background: url("./assets/images/Greenfiestaevenpic_005.avif") center / cover no-repeat;
+  background: url("./assets/images/Greenfiestaevenpic_005_2.avif") center / cover no-repeat;
   -webkit-mask-image:
-    linear-gradient(to bottom, transparent 0%, #030303 20%, #030303 80%, transparent 100%),
-    linear-gradient(to right, transparent 0%, #030303 16%, #030303 84%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, #030303 20%, #030303 70%, transparent 99%),
+    linear-gradient(to right, transparent 1%, #030303 18%, #030303 84%, transparent 100%);
   -webkit-mask-composite: source-in;
   mask-image:
-    linear-gradient(to bottom, transparent 0%, #030303 20%, #030303 80%, transparent 100%),
-    linear-gradient(to right, transparent 0%, #030303 16%, #030303 84%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, #030303 20%, #030303 70%, transparent 99%),
+    linear-gradient(to right, transparent 1%, #030303 18%, #030303 84%, transparent 100%);
   mask-composite: intersect;
 }
 
