@@ -6,12 +6,12 @@
 
 html {
   scroll-behavior: smooth;
-  --grain-svg: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  --grain-svg: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.5' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
-  background: #050505;
+  background: #000;
   color: #fff;
   line-height: 1.6;
   max-width: 1920px;
@@ -30,7 +30,7 @@ body::before {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  opacity: 0.15;
+  opacity: 0.08;
   background-image: var(--grain-svg);
 }
 
@@ -113,12 +113,12 @@ main {
   margin-top: 3rem;
   background: url("./assets/images/Greenfiestaevenpic_005.avif") center / cover no-repeat;
   -webkit-mask-image:
-    linear-gradient(to bottom, transparent 0%, #0a0a0a 15%, #0a0a0a 85%, transparent 100%),
-    linear-gradient(to right, transparent 0%, #0a0a0a 12%, #0a0a0a 88%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, #000 20%, #000 80%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 16%, #000 84%, transparent 100%);
   -webkit-mask-composite: source-in;
   mask-image:
-    linear-gradient(to bottom, transparent 0%, #0a0a0a 15%, #0a0a0a 85%, transparent 100%),
-    linear-gradient(to right, transparent 0%, #0a0a0a 12%, #0a0a0a 88%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, #000 20%, #000 80%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 16%, #000 84%, transparent 100%);
   mask-composite: intersect;
 }
 
@@ -549,7 +549,7 @@ h2 {
 
 @media (max-width: 768px) {
   html {
-    --grain-svg: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    --grain-svg: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.8' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   }
 
   .top-bar {
